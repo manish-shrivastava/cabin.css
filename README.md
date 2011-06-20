@@ -21,23 +21,23 @@ Need more style support? Not a problem, take a look at Cabin's extensions below.
 
 Cabin is as powerful as you choose to make it. Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <i>How to use</i>).
 
-<code>reset.cabin.css</code> &mdash; a small yet effective CSS reset file
+<code>reset.cabin.css</code> &mdash; a small yet effective CSS reset file - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Reset)
 <br/>
-<code>grid12.cabin.css</code> &mdash; a 12 column grid, based on 960.gs which includes width based media queries
+<code>grid12.cabin.css</code> &mdash; a 12 column grid, based on 960.gs which includes width based media queries - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col)
 <br/>
-<code>fluid-grid12.cabin.css</code> &mdash; a 12 column fully fluid grid, based 960.gs - [link](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col%20Fluid)
+<code>fluid-grid12.cabin.css</code> &mdash; a 12 column fully fluid grid, based 960.gs - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col%20Fluid)
 <br/>
-<code>grid16.cabin.css</code> &mdash; a 16 column grid, based on 960.gs which includes width based media queries
+<code>grid16.cabin.css</code> &mdash; a 16 column grid, based on 960.gs which includes width based media queries - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/16%20Col)
 <br/>
-<code>fluid-grid16.cabin.css</code> &mdash; a 16 column fully fluid grid, based 960.gs
+<code>fluid-grid16.cabin.css</code> &mdash; a 16 column fully fluid grid, based 960.gs - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/16%20Col%20Fluid)
 <br/>
-<code>tables.cabin.css</code> &mdash; basic styles for tables
+<code>tables.cabin.css</code> &mdash; basic styles for tables - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables)
 <br/>
-<code>forms.cabin.css</code> &mdash; basic styles for forms
+<code>forms.cabin.css</code> &mdash; basic styles for forms - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms)
 <br/>
-<code>m-query.cabin.css</code> &mdash; adds width based media queries to your project
+<code>m-query.cabin.css</code> &mdash; adds width based media queries to your project - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Media%20Query)
 <br/>
-<code>debug.cabin.css</code> &mdash; a useful Log for debugging your project
+<code>debug.cabin.css</code> &mdash; a useful Log for debugging your project - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Debug)
 
 ##How to use
 
