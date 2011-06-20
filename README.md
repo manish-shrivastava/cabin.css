@@ -43,8 +43,7 @@ Cabin is as powerful as you choose to make it. Adding extensions to your Cabin p
 ##Installing
 
 To add CabinCSS to your project, simply open up your HTML file and add the following in the <code>&lt;head&gt;</code> section:
-<pre><code>
-&lt;head&gt;
+<pre><code>&lt;head&gt;
 	&lt;!-- Cabin reset --&gt;
 	&lt;link rel="stylesheet" href="/css/reset.cabin.css" type="text/css" /&gt;
 	&lt;!-- Cabin core --&gt;
