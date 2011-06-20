@@ -6,9 +6,9 @@ Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet si
 The core cabin.css file has defined styles for:
 
 <ul>
-	<li>Body &amp; wrapper</li>
+	<li>Body and a wrapper class</li>
 	<li>Headings &mdash; h1, h2, h3, h4, h5, h6</li>
-	<li>Paragraphs</li>
+	<li>Paragraphs, incl. the following inline tags: <code>&lt;i&gt;, &lt;em&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;strikethrough&gt;, &lt;small&gt;, &lt;acronym&gt;</code></li>
 	<li>Blockquotes</li>
 	<li>Code &amp; Pre</li>
 	<li>Lists &mdash; ol, ul and dl</li>
