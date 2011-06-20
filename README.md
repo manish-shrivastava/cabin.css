@@ -22,9 +22,9 @@ Need more style support? Not a problem, take a look at Cabin's extensions below.
 Cabin is as powerful as you choose to make it. Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see the Installing section below).
 
 ##Current extensions:
-<code>reset.cabin.css</code>			a small yet effective CSS reset file
+<code>reset.cabin.css</code> &mdash; a small yet effective CSS reset file
 <br/>
-<code>grid12.cabin.css</code>			a 12 column grid, based on 960.gs which includes width based media queries
+<code>grid12.cabin.css</code> &mdash; a 12 column grid, based on 960.gs which includes width based media queries
 <br/>
 <code>fluid-grid12.cabin.css</code> &mdash; a 12 column fully fluid grid, based 960.gs
 <br/>
@@ -43,9 +43,7 @@ Cabin is as powerful as you choose to make it. Adding extensions to your Cabin p
 ##Installing
 
 To add CabinCSS to your project, simply open up your HTML file and add the following in the <code>&lt;head&gt;</code> section:
-
-<pre>
-<code>
+<pre><code>
 &lt;head&gt;
 	&lt;!-- Cabin reset --&gt;
 	&lt;link rel="stylesheet" href="/css/reset.cabin.css" type="text/css" /&gt;
@@ -54,5 +52,4 @@ To add CabinCSS to your project, simply open up your HTML file and add the follo
 	&lt;!-- Cabin extension --&gt;
 	&lt;link rel="stylesheet" href="/css/&lt;extension&gt;.cabin.css" type="text/css" /&gt;
 &lt;/head&gt;
-</code>
-</pre>
+</code></pre>
