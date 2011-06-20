@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/*----------------------------------------
+/////////////	CABIN.CSS	/////////////
+Author:		Adam Whitcroft
+Twitter:	@adamwhitcroft
+URL:		http://www.cabincss.com
+Version:	1.0
+
+Licensed under GPL and MIT
+
+TABLE OF CONTENTS:
+01	RESET
+02	HTML, BODY, MAIN
+03	GRIDS
+04	TYPOGRAPHY
+05	LISTS
+06	LOGO
+07	NAVIGATION
+	a.	Horizontal Orientation
+	b.	Horizontal Center Aligned
+	c.	Vertical Orientation
+08	IMAGES
+09	FORMS
+10	TABLES
+11	@MEDIA WIDTH QUERY
+12	DEBUGGING
+
+Cabin.css will feature more robust HTML5 
+support in future updates
+----------------------------------------*/
+
+/*----------------------------------------
+01	RESET
+----------------------------------------*/
+/*
+Do you want to use a reset stylesheet?
+[link]
+IMPORTANT: you MUST place the link to the
+reset stylsheet ABOVE the link to
+the main cabin.css stylesheet.
+
+<head>
+	<!-- Cabin reset -->
+	<link rel="stylesheet" href="css/reset.cabin.css" type="text/css" />
+
+	<!-- Cabin core -->
+	<link rel="stylesheet" href="css/cabin.css" type="text/css" />
+</head>
+*/
+/*----------------------------------------
+02	HTML, BODY, MAIN
+----------------------------------------*/
+html {
+	font-family:Arial, sans-serif;	/* basic sans-serif font stack - replace with your own */
+	font-family:Georgia, serif;		/* basic serif font stack - replace with your own */
+	font-size:100%; 				/* 16px */
+	line-height:1.5em;
+	background:#FFFFFF;
+	color:#141414;
+}
+body {
+	min-height:100%;
+}
+/*If you want to use the body element as a wrapper, apply the wrapper class below
+otherwise add it to the div you want to use as a wrapper */
+
+/* If you are using either the 12 or 16 column grid, DO NOT APPLY the wrapper class */
+.wrapper {
+	margin:0 auto;
+	width:940px;
+	padding:10px;
+}
+.clear {
+	clear:both;
+	float:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+/*----------------------------------------
+03	GRIDS
+----------------------------------------*/
+/*
+Do you want to use grids?
+12 Column Fluid Grid : [link]
+16 Column Fluid Grid : [link]
+*/
+/*----------------------------------------
+04	TYPOGRAPHY
+	Calculate em size by dividing the desired font size (px) by 16. For example: 32px / 16px = 2em
+	Bottom margins used here are proportional to the height of the headings - if you are more
+	comfortable setting bottom margins in px please do so.
+----------------------------------------*/
+/* Headings */
+h1 {
+	font-size:2em; /* 32px */
+	margin-bottom:0.5em;
+}
+h2 {
+	font-size:1.5em; /* 24px */
+	margin-bottom:0.67em;
+}
+h3 {
+	font-size:1.375em; /* 22px */
+	margin-bottom:0.72em;
+}
+h4 {
+	font-size:1.25em; /* 20px */
+	margin-bottom:0.8em;
+}
+h5 {
+	font-size:1.125em; /* 18px */
+	margin-bottom:0.89em;
+}
+h6 {
+	font-size:1em; /* 16px */
+	margin-bottom:1em;
+	font-weight:bold;
+}
+h1 img, 
+h2 img, 
+h3 img,
+h4 img, 
+h5 img, 
+h6 img {
+ 	margin: 0;
+}
+/* Paragraphs */
+p {
+	margin-bottom:1.5em;
+}
+i,em,cite {
+	font-style:italic;	
+}
+b,strong {
+	font-weight:bold;
+}
+del {
+	text-decoration:line-through;
+}
+small {
+	font-size:0.75em;
+	line-height:1em;
+}
+a {
+	text-decoration:none;
+	cursor:pointer;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:visited,a:focus {
+	position:relative;
+	top:1px;
+}
+/* Blockquotes */
+blockquote {
+	margin-bottom:1.5em;
+	text-indent:-0.5em; /* remember to ALWAYS open your quotes with &ldquo; and close with &rdquo; and NOT "" */
+}
+cite {
+	font-style:italic;
+	display:block;
+	font-size:0.75em; /* 12px */
+	text-indent:0;	
+}
+/* Code & Pre */
+pre,code {
+	font-family:monospace;
+	font-size:1em; /* 16px */
+}
+pre {
+	overflow:auto;
+	margin-bottom:1.5em;
+}
+code {
+	line-height:1em;
+}
+.codecomment {
+	color:#0D9815;
+}
+/* Customise the text selection color */
+::selection {
+	color:white;
+	background:red;
+}
+::-moz-selection {
+	color:white;
+	background:red;
+}
+hr {
+	margin:0 0 1.5em 0;
+	/*
+	border-top:1 px solid #BBBBBB;
+	border-right:1 px solid #BBBBBB;
+	border-bottom:1 px solid #BBBBBB;
+	border-left:1 px solid #BBBBBB;
+	*/
+}
+/*----------------------------------------
+05	LISTS
+	Available list-styles: disc, circle, square, decimal, lower-roman, upper-roman, lower-alpha, upper-alpha
+----------------------------------------*/
+ul,ol {
+	margin:0 0 1.5em 0; /* left margin of 40px has been removed to create a hung list - add in the 40px left margin if you prefer it */
+}
+ul ul,ul ol,ol ol,ol ul {
+	margin:0 0 0 40px;
+}
+ul {
+	list-style:block outside;
+}
+ol {
+	list-style:decimal outside;
+}
+ol ol {
+	list-style:lower-alpha outside;
+}
+/* Definition Lists */
+dl {
+	margin-bottom:1em;
+}
+dt {
+	font-weight:bold;
+}
+dt:after{
+	content:":"; /* this selector adds a colon after the definition list title - if you don't want this, simply remove this line */
+}
+dt::after{
+	content:":"; /* this selector adds a colon after the definition list title - if you don't want this, simply remove this line */
+}
+dd {
+	margin:0 0 0 40px;
+}
+/*----------------------------------------
+06	LOGO
+	Suggested markup for your logo:
+	<div>
+		<a id="logo" href="#">
+			Cabin.css
+		</a>
+	</div>
+	
+	Harry Roberts has a great article on why you should NOT use h1 and image replacement for your logo.
+	http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/ 
+	I use a slightly different method but the concept is the same
+----------------------------------------*/
+#logo {
+	display:block;
+	height:99px; /* replace this with the height of your logo */
+	width:300px; /* replace this with the width of your logo */
+	background:url(img/yourlogo) no-repeat 0 0;
+	text-indent:-9999em;
+}
+#logo:hover {
+	background-position:0 -99px; /* replace 99 with your own value for your image hover state */
+	border:0;
+	text-decoration:none;
+}
+/*----------------------------------------
+07	NAVIGATION
+----------------------------------------*/
+/*----------------------------------------
+07a	Horizontal Orientation
+	Apply id="nav-hor" to your ul eg: <ul id="nav-hor">
+----------------------------------------*/
+/* Horizontal menu */
+#nav-hor {
+	overflow:hidden;
+	list-style:none;
+	margin:0 0 1.5em 0;
+	border-top:1px solid #BBBBBB;
+	border-bottom:1px solid #BBBBBB;	
+}
+#nav-hor li {
+	float:left;
+}
+#nav-hor li a {
+	padding:5px;
+	display:block;
+}
+/*----------------------------------------
+07b	Horizontal Center Aligned
+	Apply id="nav-cen" to your ul eg: <ul id="nav-cen">
+----------------------------------------*/
+#nav-cen {
+	list-style:none;
+	text-align:center;
+	border-top:1px solid #BBBBBB;
+	border-bottom:1px solid #BBBBBB;
+}
+#nav-cen li {
+	display:inline;
+}
+#nav-cen li a {
+	display:inline-block;
+	padding:5px;
+}
+/*----------------------------------------
+07c	Vertical Orientation
+	Apply id="nav-ver" to your ul eg: <ul id="nav-ver">
+----------------------------------------*/
+#nav-ver {
+	overflow:hidden;
+	list-style:none;
+	margin:0 0 1.5em 0;
+}
+#nav-ver li {
+	line-height:1.5em;
+}
+#nav-ver li a {
+	padding:5px;
+	display:block;
+	border-bottom:1px solid #BBBBBB;
+}
+#nav-v li:last-child {
+	border:none; /* removes border from last menu item */
+}
+/*----------------------------------------
+08	IMAGES
+	Read up on fluid images http://www.alistapart.com/articles/fluid-images/
+----------------------------------------*/
+img,embed,object,video {
+	max-width:100%;
+	height:auto;
+}
+img {
+	font-style:italic;
+	color:#BBBBBB;
+}
+/*----------------------------------------
+09	FORMS
+----------------------------------------*/
+/*
+Do you want to use forms?
+[link]
+forms.cabin.css will add basic styles to your forms.
+*/
+/*----------------------------------------
+10	TABLES
+----------------------------------------*/
+/*
+Do you want to use tables?
+[link]
+tables.cabin.css will add basic styles to your tables.
+*/
+/*----------------------------------------
+11	@MEDIA
+----------------------------------------*/
+/*
+Do you want to debug your project?
+[link]
+media.cabin.css includes media (tablet, mobile phone etc) repsonsive settings
+*/
+/*----------------------------------------
+12	DEBUGGING
+----------------------------------------*/
+/*
+Do you want to debug your project?
+[link]
+debug.cabin.css includes some useful debugging classes
+*/
