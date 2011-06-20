@@ -25,7 +25,7 @@ Cabin is as powerful as you choose to make it. Adding extensions to your Cabin p
 <br/>
 <code>grid12.cabin.css</code> &mdash; a 12 column grid, based on 960.gs which includes width based media queries
 <br/>
-<code>fluid-grid12.cabin.css</code> &mdash; a 12 column fully fluid grid, based 960.gs
+<code>fluid-grid12.cabin.css</code> &mdash; a 12 column fully fluid grid, based 960.gs - [link](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col%20Fluid)
 <br/>
 <code>grid16.cabin.css</code> &mdash; a 16 column grid, based on 960.gs which includes width based media queries
 <br/>
