@@ -8,7 +8,7 @@ The core cabin.css file has defined styles for:
 <ul>
 	<li>Body and a wrapper class</li>
 	<li>Headings &mdash; h1, h2, h3, h4, h5, h6</li>
-	<li>Paragraphs, incl. the following inline tags: <code>&lt;i&gt;, &lt;em&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;strikethrough&gt;, &lt;small&gt;, &lt;acronym&gt;</code></li>
+	<li>Paragraphs, incl. the following tags: <code>&lt;i&gt;, &lt;em&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;strikethrough&gt;, &lt;small&gt;, &lt;acronym&gt;</code></li>
 	<li>Blockquotes</li>
 	<li>Code &amp; Pre</li>
 	<li>Lists &mdash; ol, ul and dl</li>
@@ -19,9 +19,8 @@ Need more style support? Not a problem, take a look at Cabin's extensions below.
 
 ##Cabin's extensions
 
-Cabin is as powerful as you choose to make it. Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see the Installing section below).
+Cabin is as powerful as you choose to make it. Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <i>How to use</i>).
 
-##Current extensions
 <code>reset.cabin.css</code> &mdash; a small yet effective CSS reset file
 <br/>
 <code>grid12.cabin.css</code> &mdash; a 12 column grid, based on 960.gs which includes width based media queries
