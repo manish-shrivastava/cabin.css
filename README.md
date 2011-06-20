@@ -3,7 +3,7 @@ Cabin is a super lightweight extensible and expandable CSS framework focused on 
 
 Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extensions providing additional styles that you can add when/if you need them. 
 
-The core cabin.css file has predefined styles for:
+The core cabin.css file has defined styles for:
 
 <ul>
 	<li>Body &amp; wrapper</li>

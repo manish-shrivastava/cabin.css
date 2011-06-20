@@ -194,6 +194,7 @@ code {
 hr {
 	margin:0 0 1.5em 0;
 	/*
+	HR is effectively a box model
 	border-top:1 px solid #BBBBBB;
 	border-right:1 px solid #BBBBBB;
 	border-bottom:1 px solid #BBBBBB;
