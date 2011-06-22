@@ -113,27 +113,27 @@ Do you want to use grids?
 /* Headings */
 h1 {
 	font-size:2em; /* 32px */
-	margin-bottom:0.5em;
+	margin-bottom:24px;
 }
 h2 {
 	font-size:1.5em; /* 24px */
-	margin-bottom:0.67em;
+	margin-bottom:24px;
 }
 h3 {
 	font-size:1.375em; /* 22px */
-	margin-bottom:0.72em;
+	margin-bottom:24px;
 }
 h4 {
 	font-size:1.25em; /* 20px */
-	margin-bottom:0.8em;
+	margin-bottom:24px;
 }
 h5 {
 	font-size:1.125em; /* 18px */
-	margin-bottom:0.89em;
+	margin-bottom:24px;
 }
 h6 {
 	font-size:1em; /* 16px */
-	margin-bottom:1em;
+	margin-bottom:24px;
 	font-weight:bold;
 }
 h1 img, 
