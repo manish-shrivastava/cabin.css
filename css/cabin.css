@@ -68,9 +68,9 @@ blockquote:before,blockquote:after,q:before,q:after {
 02	HTML, BODY, MAIN
 ----------------------------------------*/
 html {
-	font-family:Arial, sans-serif;	/* basic sans-serif font stack - replace with your own */
-	font-family:Georgia, serif;		/* basic serif font stack - replace with your own */
-	font-size:100%; 				/* 16px */
+	/*font-family:Arial, sans-serif;*/	/* basic sans-serif font stack - replace with your own */
+	font-family:Georgia, serif;			/* basic serif font stack - replace with your own */
+	font-size:100%; 					/* 16px */
 	background:#FFFFFF;
 	color:#141414;
 }
