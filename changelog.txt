@@ -1,1 +1,2 @@
-1.0		26.06.2011	Cabin released
+1.0			Cabin releases to select few for feedback
+1.0.1		Added .nomargin and .center, changed menu selector from id to class, corrected various typos		
