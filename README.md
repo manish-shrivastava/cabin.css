@@ -5,18 +5,17 @@ the nitty gritty out the way when starting a new project.
 
 Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extensions providing additional styles that you can add when/if you need them. 
 
-The core cabin.css file has defined styles for:
+The core cabin.css file includes an <b>almighty</b> reset and has predefined styles for:
+<code>html, body, .wrapper, .clear, .h1, .h2, .h3, .h4, .h5, .h6, p, .nomargin, .center, i, em, cite, b, strong, del, small, a, a:hover, blockquote, cite, pre, code, .codecomment, ::selection, hr, ul, ol, ul ul, ul ol, ol ol, ol ul, li, dl, dt, dd, #logo, img</code>
 
+It also includes 3 basic menu presets:
 <ul>
-	<li>Body and a wrapper class</li>
-	<li>Headings &mdash; h1, h2, h3, h4, h5, h6</li>
-	<li>Paragraphs, incl. the following tags: <code>&lt;i&gt;, &lt;em&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;strikethrough&gt;, &lt;small&gt;, &lt;acronym&gt;</code></li>
-	<li>Blockquotes</li>
-	<li>Code &amp; Pre</li>
-	<li>Lists &mdash; ol, ul and dl</li>
-	<li>3 Menus &mdash; horizontal, horizontal center aligned &amp; vertical</li>
+<li>Horizontal menu by adding <code>class="nav-hor"</code> to your menu &lt;ul&gt;</li>
+<li>Horizontal center aligned menu by adding <code>class="nav-cen"</code> to your menu &lt;ul&gt;</li>
+<li>Vertical menu by adding <code>class="nav-ver"</code> to your menu &lt;ul&gt;</li>
 </ul>
 
+Do you need predefined styles outside of the ones covered by the core cabin.css? Easy! Cabin comes with a bunch of extensions to do just that.
 
 ##Cabin's extensions
 
