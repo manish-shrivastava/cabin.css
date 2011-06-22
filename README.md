@@ -63,7 +63,7 @@ Open up your HTML document and add the following in the <code>&lt;head&gt;</code
 
 ##Feedback &amp; Suggestions
 
-Once you've had a crack at Cabin, let me know about it! Tweet @adamwhitcroft with your feedback, 
+Once you've had a crack at Cabin, let me know about it! Tweet [@adamwhitcroft](http://www.twitter.com/adamwhitcroft) with your feedback, 
 suggestions or just to let me know you are using Cabin.
 
 I welcome feedback and would love to hear if I have left out something you think should be
