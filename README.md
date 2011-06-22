@@ -3,8 +3,6 @@
 Cabin is a super lean, super modular CSS framework focused on providing you with unobtrusive predefined styles, perfect to help you get
 the nitty gritty out the way when starting a new project.
 
-Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extensions providing additional styles that you can add when/if you need them. 
-
 The core cabin.css file includes an <b>almighty</b> reset and has predefined styles for:
 <code>html, body, .wrapper, .clear, .h1, .h2, .h3, .h4, .h5, .h6, p, .nomargin, .center, i, em, cite, b, strong, del, small, a, a:hover, blockquote, cite, pre, code, .codecomment, ::selection, hr, ul, ol, ul ul, ul ol, ol ol, ol ul, li, dl, dt, dd, #logo, img</code>
 
@@ -15,11 +13,11 @@ It also includes 3 basic menu presets:
 <li>Vertical menu by adding <code>class="nav-ver"</code> to your menu &lt;ul&gt;</li>
 </ul>
 
-Do you need predefined styles outside of the ones covered by the core cabin.css? Easy! Cabin comes with a bunch of extensions to do just that.
+Do you need predefined styles outside of the ones covered by the core cabin.css file? Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extension files providing additional styles that you can add when/if you need to. 
 
 ##Cabin's extensions
 
-Cabin is as powerful as you choose to make it. Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <b>How to use</b>).
+Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <b>How to use</b>). Additional extensions are in the works.
 
 
 ###12 column grid
