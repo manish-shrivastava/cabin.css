@@ -25,17 +25,11 @@ Cabin is as powerful as you choose to make it. Adding extensions to your Cabin p
 <br/>
 <code>grid12.cabin.css</code> &mdash; a 12 column grid, based on 960.gs which includes width based media queries - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col)
 <br/>
-<code>fluid-grid12.cabin.css</code> &mdash; a 12 column fully fluid grid, based 960.gs - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col%20Fluid)
-<br/>
 <code>grid16.cabin.css</code> &mdash; a 16 column grid, based on 960.gs which includes width based media queries - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/16%20Col)
-<br/>
-<code>fluid-grid16.cabin.css</code> &mdash; a 16 column fully fluid grid, based 960.gs - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/16%20Col%20Fluid)
 <br/>
 <code>tables.cabin.css</code> &mdash; basic styles for tables - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables)
 <br/>
 <code>forms.cabin.css</code> &mdash; basic styles for forms - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms)
-<br/>
-<code>m-query.cabin.css</code> &mdash; adds width based media queries to your project - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Media%20Query)
 <br/>
 <code>debug.cabin.css</code> &mdash; a useful Log for debugging your project - [view extension](https://github.com/Cabincss/Cabin-Extensions/tree/master/Debug)
 
