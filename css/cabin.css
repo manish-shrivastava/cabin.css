@@ -63,8 +63,6 @@ body {
 }
 /*If you want to use the body element as a wrapper, apply the wrapper class below
 otherwise add it to the div you want to use as a wrapper */
-
-/* If you are using either the 12 or 16 column grid, DO NOT APPLY the wrapper class */
 .wrapper {
 	margin:0 auto;
 	width:940px;
@@ -85,14 +83,14 @@ otherwise add it to the div you want to use as a wrapper */
 ----------------------------------------*/
 /*
 Do you want to use grids?
+12 Column Static Grid : [link]
 12 Column Fluid Grid : [link]
+16 Column Static Grid : [link]
 16 Column Fluid Grid : [link]
 */
 /*----------------------------------------
 04	TYPOGRAPHY
 	Calculate em size by dividing the desired font size (px) by 16. For example: 32px / 16px = 2em
-	Bottom margins used here are proportional to the height of the headings - if you are more
-	comfortable setting bottom margins in px please do so.
 ----------------------------------------*/
 /* Headings */
 h1 {
@@ -132,6 +130,12 @@ h6 img {
 p {
 	margin-bottom:1.5em;
 }
+.nomargin {
+	margin:0; /* Add this to any paragraph to remove the bottom margin of 1.5em */
+}
+.center {
+	text-align:center;
+}
 i,em,cite {
 	font-style:italic;	
 }
@@ -145,6 +149,7 @@ small {
 	font-size:0.75em;
 	line-height:1em;
 }
+/* Links */
 a {
 	text-decoration:none;
 	cursor:pointer;
@@ -193,20 +198,15 @@ code {
 }
 hr {
 	margin:0 0 1.5em 0;
-	/*
-	HR is effectively a box model
-	border-top:1 px solid #BBBBBB;
-	border-right:1 px solid #BBBBBB;
-	border-bottom:1 px solid #BBBBBB;
-	border-left:1 px solid #BBBBBB;
-	*/
+	background:#BBBBBB;
+	height:1px;
+	border:0;
 }
 /*----------------------------------------
 05	LISTS
-	Available list-styles: disc, circle, square, decimal, lower-roman, upper-roman, lower-alpha, upper-alpha
 ----------------------------------------*/
 ul,ol {
-	margin:0 0 1.5em 0; /* left margin of 40px has been removed to create a hung list - add in the 40px left margin if you prefer it */
+	margin:0 0 1.5em 0; /* left margin of 40px has been removed to create a hung list */
 }
 ul ul,ul ol,ol ol,ol ul {
 	margin:0 0 0 40px;
@@ -247,7 +247,6 @@ dd {
 	
 	Harry Roberts has a great article on why you should NOT use h1 and image replacement for your logo.
 	http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/ 
-	I use a slightly different method but the concept is the same
 ----------------------------------------*/
 #logo {
 	display:block;
@@ -266,58 +265,58 @@ dd {
 ----------------------------------------*/
 /*----------------------------------------
 07a	Horizontal Orientation
-	Apply id="nav-hor" to your ul eg: <ul id="nav-hor">
+	Apply class="nav-hor" to your ul eg: <ul class="nav-hor">
 ----------------------------------------*/
 /* Horizontal menu */
-#nav-hor {
+.nav-hor {
 	overflow:hidden;
 	list-style:none;
 	margin:0 0 1.5em 0;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;	
 }
-#nav-hor li {
+.nav-hor li {
 	float:left;
 }
-#nav-hor li a {
+.nav-hor li a {
 	padding:5px;
 	display:block;
 }
 /*----------------------------------------
 07b	Horizontal Center Aligned
-	Apply id="nav-cen" to your ul eg: <ul id="nav-cen">
+	Apply class="nav-cen" to your ul eg: <ul class="nav-cen">
 ----------------------------------------*/
-#nav-cen {
+.nav-cen {
 	list-style:none;
 	text-align:center;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;
 }
-#nav-cen li {
+.nav-cen li {
 	display:inline;
 }
-#nav-cen li a {
+.nav-cen li a {
 	display:inline-block;
 	padding:5px;
 }
 /*----------------------------------------
 07c	Vertical Orientation
-	Apply id="nav-ver" to your ul eg: <ul id="nav-ver">
+	Apply class="nav-ver" to your ul eg: <ul class="nav-ver">
 ----------------------------------------*/
-#nav-ver {
+.nav-ver {
 	overflow:hidden;
 	list-style:none;
 	margin:0 0 1.5em 0;
 }
-#nav-ver li {
+.nav-ver li {
 	line-height:1.5em;
 }
-#nav-ver li a {
+.nav-ver li a {
 	padding:5px;
 	display:block;
 	border-bottom:1px solid #BBBBBB;
 }
-#nav-v li:last-child {
+.nav-v li:last-child {
 	border:none; /* removes border from last menu item */
 }
 /*----------------------------------------
@@ -352,7 +351,7 @@ tables.cabin.css will add basic styles to your tables.
 11	@MEDIA
 ----------------------------------------*/
 /*
-Do you want to debug your project?
+Do you want to add width based media queries to your project?
 [link]
 media.cabin.css includes media (tablet, mobile phone etc) repsonsive settings
 */
