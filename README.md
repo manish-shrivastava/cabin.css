@@ -17,7 +17,7 @@ Do you need predefined styles outside of the ones covered by the core cabin.css 
 
 ##Cabin's extensions
 
-Adding extensions to your Cabin project couldn't be easier &mdash; simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <b>How to use</b>). Additional extensions are in the works.
+Adding extensions to your Cabin project couldn't be easier&mdash;simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <b>How to use</b>). Additional extensions are in the works.
 
 
 ###12 column grid
