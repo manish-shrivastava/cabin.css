@@ -4,49 +4,44 @@
 Author:		Adam Whitcroft
 Twitter:	@adamwhitcroft
 URL:		http://www.cabincss.com
-Version:	1.0
+Version:	1.0.2
 
 Licensed under GPL and MIT
-
-TABLE OF CONTENTS:
-01	RESET
-02	HTML, BODY, MAIN
-03	GRIDS
-04	TYPOGRAPHY
-05	LISTS
-06	LOGO
-07	NAVIGATION
-	a.	Horizontal Orientation
-	b.	Horizontal Center Aligned
-	c.	Vertical Orientation
-08	IMAGES
-09	FORMS
-10	TABLES
-11	@MEDIA WIDTH QUERY
-12	DEBUGGING
 
 Cabin.css will feature more robust HTML5 
 support in future updates
 ----------------------------------------*/
-
 /*----------------------------------------
 01	RESET
 ----------------------------------------*/
-/*
-Do you want to use a reset stylesheet?
-[link]
-IMPORTANT: you MUST place the link to the
-reset stylsheet ABOVE the link to
-the main cabin.css stylesheet.
-
-<head>
-	<!-- Cabin reset -->
-	<link rel="stylesheet" href="css/reset.cabin.css" type="text/css" />
-
-	<!-- Cabin core -->
-	<link rel="stylesheet" href="css/cabin.css" type="text/css" />
-</head>
-*/
+body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img,abbr,acronym { 
+	border:0;
+}
+address,caption,cite,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content: none;
+}
 /*----------------------------------------
 02	HTML, BODY, MAIN
 ----------------------------------------*/
@@ -348,15 +343,7 @@ Do you want to use tables?
 tables.cabin.css will add basic styles to your tables.
 */
 /*----------------------------------------
-11	@MEDIA
-----------------------------------------*/
-/*
-Do you want to add width based media queries to your project?
-[link]
-media.cabin.css includes media (tablet, mobile phone etc) repsonsive settings
-*/
-/*----------------------------------------
-12	DEBUGGING
+11	DEBUGGING
 ----------------------------------------*/
 /*
 Do you want to debug your project?
