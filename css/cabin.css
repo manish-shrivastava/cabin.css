@@ -179,6 +179,9 @@ blockquote {
 	margin-bottom:1.5em;
 	text-indent:-0.5em; /* remember to ALWAYS open your quotes with &ldquo; and close with &rdquo; and NOT "" */
 }
+blockquote p {
+	margin:0; /* removes the margin so cite can sit underneath it nicely */
+}
 cite {
 	font-style:italic;
 	display:block;
