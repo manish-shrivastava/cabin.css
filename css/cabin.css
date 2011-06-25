@@ -96,10 +96,8 @@ otherwise add it to the div you want to use as a wrapper */
 ----------------------------------------*/
 /*
 Do you want to use grids?
-12 Column Static Grid : [link]
-12 Column Fluid Grid : [link]
-16 Column Static Grid : [link]
-16 Column Fluid Grid : [link]
+12 Column Static Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.grid
+16 Column Static Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.grid
 */
 /*----------------------------------------
 04	TYPOGRAPHY
@@ -352,7 +350,7 @@ img {
 ----------------------------------------*/
 /*
 Do you want to use forms?
-[link]
+https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms
 forms.cabin.css will add basic styles to your forms.
 */
 /*----------------------------------------
@@ -360,7 +358,7 @@ forms.cabin.css will add basic styles to your forms.
 ----------------------------------------*/
 /*
 Do you want to use tables?
-[link]
+https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables
 tables.cabin.css will add basic styles to your tables.
 */
 /*----------------------------------------
@@ -368,6 +366,6 @@ tables.cabin.css will add basic styles to your tables.
 ----------------------------------------*/
 /*
 Do you want to debug your project?
-[link]
+https://github.com/Cabincss/Cabin-Extensions/tree/master/Debugging
 debug.cabin.css includes some useful debugging classes
 */
