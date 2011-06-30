@@ -324,11 +324,11 @@ dd {
 }
 .nav-ver li {
 	line-height:1.5em;
+	border-bottom:1px solid #BBBBBB;
 }
 .nav-ver li a {
 	padding:5px;
 	display:block;
-	border-bottom:1px solid #BBBBBB;
 }
 .nav-v li:last-child {
 	border:none; /* removes border from last menu item */
