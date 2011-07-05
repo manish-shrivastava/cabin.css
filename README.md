@@ -47,7 +47,7 @@ This extensions adds support for basic forms. It has predefined styles for <code
 
 [View forms.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms)
 
-##Social Media Messaages
+###Social Media Messaages
 This extension allows you to display themed messages from 50 popular social media platforms. There is the option of 16x16 or 32x32 icons.
 
 [View socialmedia.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/social-media)
