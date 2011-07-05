@@ -279,58 +279,58 @@ dd {
 ----------------------------------------*/
 /*----------------------------------------
 07a	Horizontal Orientation
-	Apply class="nav-hor" to your ul eg: <ul class="nav-hor">
+	Apply class="hor" to your menu ul eg: <ul class="hor">
 ----------------------------------------*/
 /* Horizontal menu */
-.nav-hor {
+.hor {
 	overflow:hidden;
 	list-style:none;
 	margin:0 0 1.5em 0;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;	
 }
-.nav-hor li {
+.hor li {
 	float:left;
 }
-.nav-hor li a {
+.hor li a {
 	padding:5px;
 	display:block;
 }
 /*----------------------------------------
 07b	Horizontal Center Aligned
-	Apply class="nav-cen" to your ul eg: <ul class="nav-cen">
+	Apply class="cen" to your menu ul eg: <ul class="cen">
 ----------------------------------------*/
-.nav-cen {
+.cen {
 	list-style:none;
 	text-align:center;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;
 }
-.nav-cen li {
+.cen li {
 	display:inline;
 }
-.nav-cen li a {
+.cen li a {
 	display:inline-block;
 	padding:5px;
 }
 /*----------------------------------------
 07c	Vertical Orientation
-	Apply class="nav-ver" to your ul eg: <ul class="nav-ver">
+	Apply class="ver" to your menu ul eg: <ul class="ver">
 ----------------------------------------*/
-.nav-ver {
+.ver {
 	overflow:hidden;
 	list-style:none;
 	margin:0 0 1.5em 0;
 }
-.nav-ver li {
+.ver li {
 	line-height:1.5em;
 	border-bottom:1px solid #BBBBBB;
 }
-.nav-ver li a {
+.ver li a {
 	padding:5px;
 	display:block;
 }
-.nav-v li:last-child {
+.ver li:last-child {
 	border:none; /* removes border from last menu item */
 }
 /*----------------------------------------
