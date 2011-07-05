@@ -279,58 +279,58 @@ dd {
 ----------------------------------------*/
 /*----------------------------------------
 07a	Horizontal Orientation
-	Apply class="hor" to your menu ul eg: <ul class="hor">
+	Apply class="hor" to your menu ul eg: <ul class="horizontal">
 ----------------------------------------*/
 /* Horizontal menu */
-.hor {
+.horizontal {
 	overflow:hidden;
 	list-style:none;
 	margin:0 0 1.5em 0;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;	
 }
-.hor li {
+.horizontal li {
 	float:left;
 }
-.hor li a {
+.horizontal li a {
 	padding:5px;
 	display:block;
 }
 /*----------------------------------------
 07b	Horizontal Center Aligned
-	Apply class="cen" to your menu ul eg: <ul class="cen">
+	Apply class="cen" to your menu ul eg: <ul class="centered">
 ----------------------------------------*/
-.cen {
+.centered {
 	list-style:none;
 	text-align:center;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;
 }
-.cen li {
+.centered li {
 	display:inline;
 }
-.cen li a {
+.centered li a {
 	display:inline-block;
 	padding:5px;
 }
 /*----------------------------------------
 07c	Vertical Orientation
-	Apply class="ver" to your menu ul eg: <ul class="ver">
+	Apply class="ver" to your menu ul eg: <ul class="vertical">
 ----------------------------------------*/
-.ver {
+.vertical {
 	overflow:hidden;
 	list-style:none;
 	margin:0 0 1.5em 0;
 }
-.ver li {
+.vertical li {
 	line-height:1.5em;
 	border-bottom:1px solid #BBBBBB;
 }
-.ver li a {
+.vertical li a {
 	padding:5px;
 	display:block;
 }
-.ver li:last-child {
+.vertical li:last-child {
 	border:none; /* removes border from last menu item */
 }
 /*----------------------------------------
