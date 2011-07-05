@@ -8,9 +8,9 @@ The core cabin.css file includes an <b>almighty</b> reset and has predefined sty
 
 It also includes 3 basic menu presets:
 <ul>
-<li>Horizontal menu by adding <code>class="nav-hor"</code> to your menu &lt;ul&gt;</li>
-<li>Horizontal center aligned menu by adding <code>class="nav-cen"</code> to your menu &lt;ul&gt;</li>
-<li>Vertical menu by adding <code>class="nav-ver"</code> to your menu &lt;ul&gt;</li>
+<li>Horizontal menu by adding <code>class="horizontal"</code> to your menu &lt;ul&gt;</li>
+<li>Horizontal center aligned menu by adding <code>class="centered"</code> to your menu &lt;ul&gt;</li>
+<li>Vertical menu by adding <code>class="vertical"</code> to your menu &lt;ul&gt;</li>
 </ul>
 
 Do you need predefined styles outside of the ones covered by the core cabin.css file? Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extension files providing additional styles that you can add when/if you need to. 
@@ -25,6 +25,11 @@ This extensions adds support for a 12 column 960px wide grid based on the wildly
 
 [View grid12.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col)
 
+###12 column fluid grid
+This extensions adds support for a 12 column fluid grid based on the wildly popular 960gs. The grid has a max-width of 960px.
+
+[View fluid-grid12.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.fluid.grid)
+
 ###16 column grid
 This extensions adds support for a 16 column 960px wide grid based on the wildly popular 960gs.
 The extensions also features width based media queries which will resize the grids according to the
@@ -32,20 +37,26 @@ width of the viewing screen.
 
 [View grid16.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/16%20Col)
 
+###16 column fluid grid
+This extensions adds support for a 16 column fluid grid based on the wildly popular 960gs. The grid has a max-width of 960px.
+
+[View fluid-grid16.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.fluid.grid)
+
 ###Forms
 This extensions adds support for basic forms. It has predefined styles for <code>fieldset, labels, inputs, textareas, .button</code> and includes some styles for useful form-related messages:
 
 [View forms.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms)
+
+##Social Media Messaages
+This extension allows you to display themed messages from 50 popular social media platforms. There is the option of 16x16 or 32x32 icons.
+
+[View socialmedia.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/social-media)
 
 ###Tables
 This extension adds support for basic tables. It has predefined styles for <code>table, th, td, colspan, rowspan</code>
 
 [View tables.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables)
 
-###Debugging
-This extension has some pretty nifty features. It checks the links and images in your page for common errors and outlines them for you. <b>Note:</b> ONLY use this extension if your project is set to offline or you are developing locally.
-
-[View debug.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/Debug)
 
 ##How to use
 
