@@ -3,3 +3,4 @@
 1.0.2		Included a default reset in the cabin.css file and deleted the reset.cabin.css extension as it was unnecessary to have separate files	
 1.0.3		Corrected possible HTML5 conflict with <nav> tag - menu classes are now "horizontal", "centered" and "vertical" 
 			Removed unnecessary p styling (.center)
+			Improved h1,h2,h3,h4,h5,h6 baseline - thanks to @joshuanhibbert for the help!
