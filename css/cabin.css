@@ -7,7 +7,7 @@ Author:		Adam Whitcroft
 URL:		http://www.cabincss.com
 Twitter:	@adamwhitcroft
 License:	MIT
-Version:	1.0.2
+Version:	1.0.3
 //////////////////////////////////////////
 ----------------------------------------*/
 /*----------------------------------------
@@ -97,7 +97,9 @@ otherwise add it to the div you want to use as a wrapper */
 /*
 Do you want to use grids?
 12 Column Static Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.grid
+12 Column Fluid Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.fluid.grid
 16 Column Static Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.grid
+16 Column Fluid Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.fluid.grid
 */
 /*----------------------------------------
 04	TYPOGRAPHY
@@ -105,29 +107,34 @@ Do you want to use grids?
 ----------------------------------------*/
 /* Headings */
 h1 {
-	font-size:2em; /* 32px */
-	margin-bottom:24px;
+    font-size: 3em; /* 48 / 16 */
+    line-height: 1em; /* 48 / 48 */
+    margin-bottom: .5em; /* 24 / 48 */
 }
 h2 {
-	font-size:1.5em; /* 24px */
-	margin-bottom:24px;
+    font-size: 2.25em; /* 36 / 16 */
+    line-height: 1.333333333333333em; /* 48 / 36 */
+    margin-bottom: .6666666666666667em; /* 24 / 36 */
 }
 h3 {
-	font-size:1.375em; /* 22px */
-	margin-bottom:24px;
+    font-size: 1.5em; /* 24 / 16 */
+    line-height: 1em; /* 24 / 24 */
+    margin-bottom: 1em; /* 24 / 24 */
 }
 h4 {
-	font-size:1.25em; /* 20px */
-	margin-bottom:24px;
+    font-size: 1.3125em; /* 21 / 16 */
+    line-height: 1.142857142857143em; /* 24 / 21 */
+    margin-bottom: 1.142857142857143em; /* 24 / 21 */
 }
 h5 {
-	font-size:1.125em; /* 18px */
-	margin-bottom:24px;
+    font-size: 1.125em; /* 18 / 16 */
+    line-height: 1.333333333333333em; /* 24 / 18 */
+    margin-bottom: 1.333333333333333em; /* 24 / 18 */
 }
 h6 {
-	font-size:1em; /* 16px */
-	margin-bottom:24px;
-	font-weight:bold;
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16 */
 }
 h1 img, 
 h2 img, 
@@ -139,13 +146,12 @@ h6 img {
 }
 /* Paragraphs */
 p {
-	margin-bottom:1.5em;
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
+    margin-bottom: 1.5em; /* 24 / 16 */
 }
 .nomargin {
 	margin:0; /* Add this to any paragraph to remove the bottom margin of 1.5em */
-}
-.center {
-	text-align:center;
 }
 i,em,cite {
 	font-style:italic;	
@@ -197,9 +203,6 @@ pre {
 }
 code {
 	line-height:1em;
-}
-.codecomment {
-	color:#0D9815;
 }
 /* Customise the text selection color */
 ::selection {
@@ -258,9 +261,6 @@ dd {
 			Cabin.css
 		</a>
 	</div>
-	
-	Harry Roberts has a great article on why you should NOT use h1 and image replacement for your logo.
-	http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/ 
 ----------------------------------------*/
 #logo {
 	display:block;
@@ -350,22 +350,25 @@ img {
 ----------------------------------------*/
 /*
 Do you want to use forms?
-https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms
 forms.cabin.css will add basic styles to your forms.
+
+https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms
 */
 /*----------------------------------------
 10	TABLES
 ----------------------------------------*/
 /*
 Do you want to use tables?
-https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables
 tables.cabin.css will add basic styles to your tables.
+
+https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables
 */
 /*----------------------------------------
 11	DEBUGGING
 ----------------------------------------*/
 /*
 Do you want to debug your project?
-https://github.com/Cabincss/Cabin-Extensions/tree/master/Debugging
 debug.cabin.css includes some useful debugging classes
+
+https://github.com/Cabincss/Cabin-Extensions/tree/master/Debugging
 */
