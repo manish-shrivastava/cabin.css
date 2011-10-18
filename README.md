@@ -1,10 +1,10 @@
-#What is Cabin?
+#Cabin CSS Framework
 
-Cabin is a super lean, super modular CSS framework focused on providing you with unobtrusive predefined styles, perfect to help you get
-the nitty gritty out the way when starting a new project.
+Cabin is a lean, modular and unobtrusive CSS framework. Cabin helps your projects get going quicker by eliminating the need for you to write basic CSS styles yourself.
 
-The core cabin.css file includes an <b>almighty</b> reset and has predefined styles for:
-<code>html, body, .wrapper, .clear, .h1, .h2, .h3, .h4, .h5, .h6, p, .nomargin, .center, i, em, cite, b, strong, del, small, a, a:hover, blockquote, cite, pre, code, .codecomment, ::selection, hr, ul, ol, ul ul, ul ol, ol ol, ol ul, li, dl, dt, dd, #logo, img</code>
+##What does the core file cover?
+
+The core <code>cabin.css</code> file is supposed to be as simple (yet supportive) as possible—perfect for smaller websites and applications. With this in mind, the core file <em>does not</em> include predefined styles for elements associated with forms,tables or grids as these are not always necessary. Adding support for these elements is incredibly easy thanks to Cabin's modular nature.
 
 It also includes 3 basic menu presets:
 <ul>
@@ -13,59 +13,31 @@ It also includes 3 basic menu presets:
 <li>Vertical menu by adding <code>class="vertical"</code> to your menu &lt;ul&gt;</li>
 </ul>
 
-Do you need predefined styles outside of the ones covered by the core cabin.css file? Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extension files providing additional styles that you can add when/if you need to. 
+Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extension files providing additional styles that you can add when/if you need to. 
 
 ##Cabin's extensions
 
-Adding extensions to your Cabin project couldn't be easier&mdash;simply add an additional stylesheet link in the <code>&lt;head&gt;</code> of your HTML document (see <b>How to use</b>). Additional extensions are in the works.
+Cabin's extension CSS files allow you to add additional predefined styles to the framework as you need them. Inclusion in your project is as simple as downloading the desired CSS file and including it in your project. There are 2 easy ways of going about this, the first uses @import found at the top of the cabin.css file
 
+<pre><code>@charset "UTF-8";
+@import url("reset.cabin.css");
+/*==================================================*/
+/*  Cabin CSS Framework 1.0.4 by Adam Whitcroft     */
+/*  hello[at]adamwhitcroft[dot]com                  */
+/*  @adamwhitcroft                                  */
+/*  Licensed under MIT                              */
+/*==================================================*/
+</code></pre>
 
-###12 column grid
-This extensions adds support for a 12 column 960px wide grid based on the wildly popular 960gs. The extensions also features width based media queries which will resize the grids according to thewidth of the viewing screen.
+Or if you prefer, you can add a <code>&lt;link /&gt;</code> inside the <code>&lt;head&gt;</code> of your page <strong>after</strong> the core <code>cabin.css</code> link.
 
-[View grid12.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/12%20Col)
-
-###12 column fluid grid
-This extensions adds support for a 12 column fluid grid based on the wildly popular 960gs. The grid has a max-width of 960px.
-
-[View fluid-grid12.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.fluid.grid)
-
-###16 column grid
-This extensions adds support for a 16 column 960px wide grid based on the wildly popular 960gs.
-The extensions also features width based media queries which will resize the grids according to the
-width of the viewing screen.
-
-[View grid16.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/16%20Col)
-
-###16 column fluid grid
-This extensions adds support for a 16 column fluid grid based on the wildly popular 960gs. The grid has a max-width of 960px.
-
-[View fluid-grid16.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.fluid.grid)
-
-###Forms
-This extensions adds support for basic forms. It has predefined styles for <code>fieldset, labels, inputs, textareas, .button</code> and includes some styles for useful form-related messages:
-
-[View forms.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms)
-
-###Social Media Messaages
-This extension allows you to display themed messages from 50 popular social media platforms. There is the option of 16x16 or 32x32 icons.
-
-[View socialmedia.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/social-media)
-
-###Tables
-This extension adds support for basic tables. It has predefined styles for <code>table, th, td, colspan, rowspan</code>
-
-[View tables.cabin.css](https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables)
-
-
-##How to use
-
-Open up your HTML document and add the following in the <code>&lt;head&gt;</code> section:
-<pre><code>&lt;head&gt;
-	&lt;!-- Cabin core --&gt;
-	&lt;link rel="stylesheet" href="/css/cabin.css" type="text/css" /&gt;
-	&lt;!-- Cabin extension --&gt;
-	&lt;link rel="stylesheet" href="/css/&lt;extension&gt;.cabin.css" type="text/css" /&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;title&gt;Let's hug kittens!&lt;title&gt;
+  <span class="codecomment">&lt;!-- Core Cabin .css file --&gt;</span>
+  &lt;link rel="stylesheet" href="css/cabin.css" /&gt;
+  <span class="codecomment">&lt;!-- Cabin extension .css file --&gt;</span>
+  &lt;link rel="stylesheet" href="css/reset.cabin.css" /&gt;
 &lt;/head&gt;
 </code></pre>
 
