@@ -42,8 +42,6 @@ Or if you prefer, you can add a <code>&lt;link /&gt;</code> inside the <code>&lt
 
 ##Feedback &amp; Suggestions
 
-Once you've had a crack at Cabin, let me know about it! Tweet [@adamwhitcroft](http://www.twitter.com/adamwhitcroft) with your feedback, 
-suggestions or just to let me know you are using Cabin.
+Cabin CSS Framework and it's extensions are available freely and as is. This means you can use it when you like, where you like and how you like without fear of reprimand. Neat huh?
 
-I welcome feedback and would love to hear if I have left out something you think should be
-included in the next release or if I have made a terrible mistake somewhere (I am only human after all).
+All I ask is that if you do choose Cabin let me know—it would make me a happy chappy. Tweet [@adamwhitcroft](http://www.twitter.com/adamwhitcroft) with your feedback, suggestions or just to let me know how you've gotten on with it.
