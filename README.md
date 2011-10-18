@@ -22,10 +22,9 @@ Cabin's extension CSS files allow you to add additional predefined styles to the
 <pre><code>@charset "UTF-8";
 @import url("reset.cabin.css");
 /*==================================================*/
-/*  Cabin CSS Framework 1.0.4 by Adam Whitcroft     */
+/*  Cabin CSS Framework by Adam Whitcroft           */
 /*  hello[at]adamwhitcroft[dot]com                  */
 /*  @adamwhitcroft                                  */
-/*  Licensed under MIT                              */
 /*==================================================*/
 </code></pre>
 
