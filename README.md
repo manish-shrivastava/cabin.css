@@ -4,9 +4,9 @@ Cabin is a lean, modular and unobtrusive CSS framework. Cabin helps your project
 
 ##What does the core file cover?
 
-The core <code>cabin.css</code> file is supposed to be as simple (yet supportive) as possible—perfect for smaller websites and applications. With this in mind, the core file <em>does not</em> include predefined styles for elements associated with forms,tables or grids as these are not always necessary. Adding support for these elements is incredibly easy thanks to Cabin's modular nature.
+The core <code>cabin.css</code> file is supposed to be as simple (yet supportive) as possible—perfect for smaller websites and applications. With this in mind, the core file <strong>does not</strong> include predefined styles for elements associated with <strong>forms or tables</strong> but if you require predefined styles for these, Cabin has you covered with it's extension files (see section called <strong>Cabin's extensions</strong> below).
 
-It also includes 3 basic menu presets:
+It also includes 3 basic menu styles:
 <ul>
 <li>Horizontal menu by adding <code>class="horizontal"</code> to your menu &lt;ul&gt;</li>
 <li>Horizontal center aligned menu by adding <code>class="centered"</code> to your menu &lt;ul&gt;</li>
@@ -34,9 +34,9 @@ Or if you prefer, you can add a <code>&lt;link /&gt;</code> inside the <code>&lt
 &lt;head&gt;
   &lt;title&gt;Let's hug kittens!&lt;title&gt;
   <span class="codecomment">&lt;!-- Core Cabin .css file --&gt;</span>
-  &lt;link rel="stylesheet" href="css/cabin.css" /&gt;
+  &lt;link rel="stylesheet" href="cabin.css" /&gt;
   <span class="codecomment">&lt;!-- Cabin extension .css file --&gt;</span>
-  &lt;link rel="stylesheet" href="css/reset.cabin.css" /&gt;
+  &lt;link rel="stylesheet" href="reset.cabin.css" /&gt;
 &lt;/head&gt;
 </code></pre>
 
