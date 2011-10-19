@@ -2,9 +2,13 @@
 
 Cabin is a lean, modular and unobtrusive CSS framework. Cabin helps your projects get going quicker by eliminating the need for you to write basic CSS styles yourself.
 
-##What does the core file cover?
+##What's in the core file?
 
-The core <code>cabin.css</code> file is supposed to be as simple (yet supportive) as possible—perfect for smaller websites and applications. With this in mind, the core file <strong>does not</strong> include predefined styles for elements associated with <strong>forms or tables</strong> but if you require predefined styles for these, Cabin has you covered with it's extension files (see section called <strong>Cabin's extensions</strong> below).
+The core <code>cabin.css</code> file is supposed to be as simple (yet supportive) as possible—perfect for smaller websites and applications. 
+
+###What is covered
+
+<code>html, body, .wrapper, .left, .right, .nomargin, .box, .cf, h1, h2, h3, h4, h5, h6, p, q, i, em, cite, b, strong, s, del, mark, abbr, small, hr, blockqupte, a, code, pre, .codecomment, ::selection, ul, ol, dl, img, embed, object, video</code>
 
 It also includes 3 basic menu styles:
 <ul>
@@ -13,7 +17,17 @@ It also includes 3 basic menu styles:
 <li>Vertical menu by adding <code>class="vertical"</code> to your menu &lt;ul&gt;</li>
 </ul>
 
-Cabin makes it easy for you to keep CSS bloat at bay by providing a solid yet simple core file, with extension files providing additional styles that you can add when/if you need to. 
+###What isn't covered
+
+The core file does not include predefined styles for elements associated with:
+
+<ul>
+<li>forms</li>
+<li>tables</li>
+<li>grids*</li>
+</ul>
+
+*Grids have now been completely removed from Cabin as there are much better systems available.
 
 ##Cabin's extensions
 
