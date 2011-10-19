@@ -53,7 +53,7 @@ Or if you prefer, you can add a <code>&lt;link /&gt;</code> inside the <code>&lt
 &lt;/head&gt;
 </code></pre>
 
-##Feedback &amp; Suggestions
+##Licensing and feedback
 
 Cabin CSS Framework and it's extensions are available to you freely on an "as is" basis. This means you can use it when you like, where you like and how you like without fear of reprimand. Neat huh?
 
