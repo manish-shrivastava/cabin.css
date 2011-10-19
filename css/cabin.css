@@ -1,89 +1,43 @@
 @charset "UTF-8";
-/*----------------------------------------
-//////////////////////////////////////////	
-CABIN.CSS
-//////////////////////////////////////////
-Author:		Adam Whitcroft
-URL:		http://www.cabincss.com
-Twitter:	@adamwhitcroft
-License:	MIT
-Version:	1.0.3
-//////////////////////////////////////////
-----------------------------------------*/
-/*----------------------------------------
-01	RESET
-----------------------------------------*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, 
-caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,img,abbr,acronym { 
-	border:0;
-}
-address,caption,cite,dfn,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-caption,th {
-	text-align:left;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
-	padding:0;
-	margin:0;
-}
-blockquote:before,blockquote:after,q:before,q:after {
-	content:'';
-	content: none;
-}
-/*----------------------------------------
-02	HTML, BODY, MAIN
-----------------------------------------*/
+@import url("reset.css");
+/*==================================================*/
+/*  Cabin CSS Framework 1.1 by Adam Whitcroft       */
+/*  hello[at]adamwhitcroft[dot]com                  */
+/*  @adamwhitcroft                                  */
+/*==================================================*/
+/*  Table of contents:                              */
+/*                                                  */
+/*  01  $HTML, Body                                 */
+/*  02  $Common                                     */
+/*  03  $Clearfix                                   */
+/*  03  $Typography                                 */
+/*  04  $Lists - ol,ul,dl                           */
+/*  05  $Logo                                       */
+/*  06  $Menu                                       */
+/*  07  $Images                                     */
+/*==================================================*/
+/*  $HTML, Body                                     */
+/*==================================================*/
 html {
-	font-family:Arial, sans-serif;		/* basic sans-serif font stack - replace with your own */
-	font-family:Georgia, serif;			/* basic serif font stack - replace with your own */
-	font-size:100%; 					/* 16px */
-	background:#FFFFFF;
-	color:#141414;
+	font-family:sans-serif;
+	font-size:100%;
+	line-height:1.5em;
+	background:#ffffff;
+	color:#1a1a1a;
+	overflow-y:scroll;
+	text-rendering: optimizeLegibility;
 }
 body {
 	min-height:100%;
-	line-height:1.5em;
 }
-/*If you want to use the body element as a wrapper, apply the wrapper class below
-otherwise add it to the div you want to use as a wrapper */
+/*==================================================*/
+/*  $Common                                         */
+/*  Set commonly occuring declarations here         */
+/*==================================================*/
 .wrapper {
 	margin:0 auto;
 	width:940px;
 	padding:10px;
-}
-.clear {
-	clear:both;
-	float:none;
 }
 .left {
 	float:left;
@@ -91,120 +45,157 @@ otherwise add it to the div you want to use as a wrapper */
 .right {
 	float:right;
 }
-/*----------------------------------------
-03	GRIDS
-----------------------------------------*/
-/*
-Do you want to use grids?
-12 Column Static Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.grid
-12 Column Fluid Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/12.column.fluid.grid
-16 Column Static Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.grid
-16 Column Fluid Grid : https://github.com/Cabincss/Cabin-Extensions/tree/master/16.column.fluid.grid
-*/
-/*----------------------------------------
-04	TYPOGRAPHY
-	Calculate em size by dividing the desired font size (px) by 16. For example: 32px / 16px = 2em
-----------------------------------------*/
-/* Headings */
+.nomargin {
+	margin:0;
+}
+.box {
+	padding:20px;
+	margin-bottom:1.5em;
+}
+.box:last-child {
+	margin-bottom:0px;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,dl,p,blockquote,address,figure,pre,fieldset,table,hr {
+	margin-bottom:1.5em;
+}
+/*==================================================*/
+/*  $Clearfix                                       */
+/*==================================================*/
+/*== Uses Nicholas Gallagher's method ==*/
+/*== http://nicolasgallagher.com/micro-clearfix-hack/ ==*/
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+}
+/*==================================================*/
+/*  $Typography                                     */
+/*==================================================*/
+h1,h2,h3,h4,h5,h6 {
+	font-weight:bold;
+}
 h1 {
-    font-size: 3em; /* 48 / 16 */
-    line-height: 1em; /* 48 / 48 */
-    margin-bottom: .5em; /* 24 / 48 */
+    font-size:2em;
+    line-height:1.5em;
 }
 h2 {
-    font-size: 2.25em; /* 36 / 16 */
-    line-height: 1.333333333333333em; /* 48 / 36 */
-    margin-bottom: .6666666666666667em; /* 24 / 36 */
+    font-size:1.5em;
+    line-height:1em;
 }
 h3 {
-    font-size: 1.5em; /* 24 / 16 */
-    line-height: 1em; /* 24 / 24 */
-    margin-bottom: 1em; /* 24 / 24 */
+    font-size:1.25em; 
+    line-height:1.2em; 
 }
 h4 {
-    font-size: 1.3125em; /* 21 / 16 */
-    line-height: 1.142857142857143em; /* 24 / 21 */
-    margin-bottom: 1.142857142857143em; /* 24 / 21 */
+    font-size:1.125em;
+    line-height:1.33em;
 }
-h5 {
-    font-size: 1.125em; /* 18 / 16 */
-    line-height: 1.333333333333333em; /* 24 / 18 */
-    margin-bottom: 1.333333333333333em; /* 24 / 18 */
+h5,h6 {
+    font-size:1em;
+    line-height: 1.5em;
 }
-h6 {
-    font-size: 1em; /* 16 / 16 */
-    line-height: 1.5em; /* 24 / 16 */
-    margin-bottom: 1.5em; /* 24 / 16 */
-}
-h1 img, 
-h2 img, 
-h3 img,
-h4 img, 
-h5 img, 
-h6 img {
- 	margin: 0;
-}
-/* Paragraphs */
+/*== Paragraphs ==*/
 p {
-    font-size: 1em; /* 16 / 16 */
-    line-height: 1.5em; /* 24 / 16 */
-    margin-bottom: 1.5em; /* 24 / 16 */
+    font-size:1em;
+    line-height:1.5em;
 }
-.nomargin {
-	margin:0; /* Add this to any paragraph to remove the bottom margin of 1.5em */
-}
-i,em,cite {
+q,i,em,cite {
 	font-style:italic;	
 }
 b,strong {
 	font-weight:bold;
 }
-del {
+s,del {
 	text-decoration:line-through;
+}
+mark {
+	background:#ffdd3d;
+}
+abbr {
+	cursor:help;
+	border-bottom:1px dotted #bbb;
 }
 small {
 	font-size:0.75em;
-	line-height:1em;
 }
-/* Links */
-a {
+hr {
+	border:0;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #fff;
+	clear:both;
+	display:block;
+}
+/*== Blockquotes ==*/
+/*==================================================*/
+/*  <blockquote>                                    */
+/*    <p>                                           */
+/*      The quote                                   */
+/*    </p>                                          */
+/*    <footer> or <small>                           */
+/*      The quote citation information              */
+/*    </footer> or </small>                         */
+/*  </blockquote>                                   */
+/*==================================================*/
+blockquote {
+	padding-left:24px;
+	border-left:5px solid #bbb;
+}
+blockquote p {
+	margin:0;
+}
+blockquote footer,
+blockquote small {
+	font-style:italic;
+	display:block;
+	font-size:0.75em;
+	text-indent:0.5em;
+	color:#bbb;	
+}
+blockquote footer:before,
+blockquote small:before {
+	content:"\2014";
+}
+/*== Links ==*/
+a,a:link {
 	text-decoration:none;
 	cursor:pointer;
 }
 a:hover {
 	text-decoration:underline;
 }
-a:visited,a:focus {
-	position:relative;
-	top:1px;
+a:visited {
+	color:red;
 }
-/* Blockquotes */
-blockquote {
-	margin-bottom:1.5em;
-	text-indent:-0.5em; /* remember to ALWAYS open your quotes with &ldquo; and close with &rdquo; and NOT "" */
-}
-blockquote p {
-	margin:0; /* removes the margin so cite can sit underneath it nicely */
-}
-cite {
-	font-style:italic;
-	display:block;
-	font-size:0.75em; /* 12px */
-	text-indent:0;	
-}
-/* Code & Pre */
+/*== Pre & Code ==*/
 pre,code {
-	font-family:monospace;
-	font-size:1em; /* 16px */
+	font-family:monospace,serif;
+	_font-family:'courier new', monospace;
+	font-size:1em;
+	background:#fff6c7;
 }
 pre {
+	padding:10px;
 	overflow:auto;
-	margin-bottom:1.5em;
+	white-space:pre;
+	white-space:pre-wrap;
+	word-wrap:break-word;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;	
 }
 code {
 	line-height:1em;
 }
-/* Customise the text selection color */
+.codecomment {
+	color:#008800;
+}
+/*== Selection ==*/
 ::selection {
 	color:white;
 	background:red;
@@ -213,23 +204,14 @@ code {
 	color:white;
 	background:red;
 }
-hr {
-	margin:0 0 1.5em 0;
-	background:#BBBBBB;
-	height:1px;
-	border:0;
-}
-/*----------------------------------------
-05	LISTS
-----------------------------------------*/
+/*==================================================*/
+/*  $Lists - ol,ul,dl                               */
+/*==================================================*/
 ul,ol {
-	margin:0 0 1.5em 0; /* left margin of 40px has been removed to create a hung list */
+/* margin-bottom set in $Common */
 }
 ul ul,ul ol,ol ol,ol ul {
 	margin:0 0 0 40px;
-}
-ul {
-	list-style:block outside;
 }
 ol {
 	list-style:decimal outside;
@@ -237,57 +219,56 @@ ol {
 ol ol {
 	list-style:lower-alpha outside;
 }
-/* Definition Lists */
+ul {
+	list-style:block outside;
+}
 dl {
-	margin-bottom:1em;
+/* margin-bottom set in $Common */	
 }
 dt {
 	font-weight:bold;
 }
 dt:after{
-	content:":"; /* this selector adds a colon after the definition list title - if you don't want this, simply remove this line */
+	content:":";
 }
 dt::after{
-	content:":"; /* this selector adds a colon after the definition list title - if you don't want this, simply remove this line */
+	content:":";
 }
 dd {
 	margin:0 0 0 40px;
 }
-/*----------------------------------------
-06	LOGO
-	Suggested markup for your logo:
-	<div>
-		<a id="logo" href="#">
-			Cabin.css
-		</a>
-	</div>
-----------------------------------------*/
-#logo {
+/*==================================================*/
+/*  $Logo                                           */
+/*  <a id="logo" href="/" title="Go home">          */
+/*    <img src="img/yourlogo.png"                   */
+/*  </a>                                            */
+/*==================================================*/
+.logo,.logo img {
 	display:block;
-	height:99px; /* replace this with the height of your logo */
-	width:300px; /* replace this with the width of your logo */
-	background:url(img/yourlogo) no-repeat 0 0;
-	text-indent:-9999em;
+	width:auto;
+	height:auto;
 }
-#logo:hover {
-	background-position:0 -99px; /* replace 99 with your own value for your image hover state */
-	border:0;
-	text-decoration:none;
+.logo {
+	background:url(img/yourlogo.png);
 }
-/*----------------------------------------
-07	NAVIGATION
-----------------------------------------*/
-/*----------------------------------------
-07a	Horizontal Orientation
-	Apply class="hor" to your menu ul eg: <ul class="horizontal">
-----------------------------------------*/
-/* Horizontal menu */
+.logo:hover {
+	background-position:0 -00px;
+}
+.logo img {
+	position:absolute;
+	left:-9999px;
+}
+/*==================================================*/
+/*  $Menu                                           */
+/*==================================================*/
+/*== Horizontal Menu ==*/
+/*== Apply class="horizontal" to your menu ul eg: <ul class="horizontal"> ==*/
 .horizontal {
 	overflow:hidden;
 	list-style:none;
-	margin:0 0 1.5em 0;
-	border-top:1px solid #BBBBBB;
-	border-bottom:1px solid #BBBBBB;	
+	margin:0 0 1.5em 0;	
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;	
 }
 .horizontal li {
 	float:left;
@@ -296,15 +277,13 @@ dd {
 	padding:5px;
 	display:block;
 }
-/*----------------------------------------
-07b	Horizontal Center Aligned
-	Apply class="cen" to your menu ul eg: <ul class="centered">
-----------------------------------------*/
+/*== Horizontally Centered Menu ==*/
+/*== Apply class="centered" to your menu ul eg: <ul class="centered"> ==*/
 .centered {
 	list-style:none;
 	text-align:center;
-	border-top:1px solid #BBBBBB;
-	border-bottom:1px solid #BBBBBB;
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;	
 }
 .centered li {
 	display:inline;
@@ -313,10 +292,8 @@ dd {
 	display:inline-block;
 	padding:5px;
 }
-/*----------------------------------------
-07c	Vertical Orientation
-	Apply class="ver" to your menu ul eg: <ul class="vertical">
-----------------------------------------*/
+/*== Vertical Menu ==*/
+/*== Apply class="vertical" to your menu ul eg: <ul class="vertical"> ==*/
 .vertical {
 	overflow:hidden;
 	list-style:none;
@@ -324,51 +301,24 @@ dd {
 }
 .vertical li {
 	line-height:1.5em;
-	border-bottom:1px solid #BBBBBB;
+	border-bottom:1px solid #bbb;
 }
 .vertical li a {
 	padding:5px;
 	display:block;
 }
 .vertical li:last-child {
-	border:none; /* removes border from last menu item */
+	border:none;
 }
-/*----------------------------------------
-08	IMAGES
-	Read up on fluid images http://www.alistapart.com/articles/fluid-images/
-----------------------------------------*/
-img,embed,object,video {
+/*==================================================*/
+/*  $Images                                         */
+/*==================================================*/
+img {
+	max-width:100%;
+	height:auto;
+	font-style:italic;
+}
+embed,object,video {
 	max-width:100%;
 	height:auto;
 }
-img {
-	font-style:italic;
-	color:#BBBBBB;
-}
-/*----------------------------------------
-09	FORMS
-----------------------------------------*/
-/*
-Do you want to use forms?
-forms.cabin.css will add basic styles to your forms.
-
-https://github.com/Cabincss/Cabin-Extensions/tree/master/Forms
-*/
-/*----------------------------------------
-10	TABLES
-----------------------------------------*/
-/*
-Do you want to use tables?
-tables.cabin.css will add basic styles to your tables.
-
-https://github.com/Cabincss/Cabin-Extensions/tree/master/Tables
-*/
-/*----------------------------------------
-11	DEBUGGING
-----------------------------------------*/
-/*
-Do you want to debug your project?
-debug.cabin.css includes some useful debugging classes
-
-https://github.com/Cabincss/Cabin-Extensions/tree/master/Debugging
-*/
