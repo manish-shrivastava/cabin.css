@@ -24,10 +24,9 @@ The core file does not include predefined styles for elements associated with:
 <ul>
 <li>forms</li>
 <li>tables</li>
-<li>grids*</li>
 </ul>
 
-*Grids have now been completely removed from Cabin as there are much better systems available.
+Grids have now been completely removed from Cabin as there are much better systems available.
 
 ##Cabin's extensions
 
