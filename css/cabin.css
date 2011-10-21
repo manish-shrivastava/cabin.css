@@ -25,7 +25,6 @@ html {
 	background:#ffffff;
 	color:#1a1a1a;
 	overflow-y:scroll;
-	text-rendering: optimizeLegibility;
 	-webkit-text-size-adjust: none;
 }
 body {
@@ -174,10 +173,14 @@ a:visited {
 	color:red;
 }
 /*== Pre & Code ==*/
-pre,code {
+code,
+pre {
 	font-family: consolas, monospace, sans-serif;
 	font-size:1em;
 	background:#fff6c7;
+}
+code {
+	line-height:1em;
 }
 pre {
 	padding:10px;
@@ -188,9 +191,6 @@ pre {
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;	
-}
-code {
-	line-height:1em;
 }
 .codecomment {
 	color:#008800;
