@@ -204,6 +204,12 @@ pre {
 	color:white;
 	background:red;
 }
+a::selection {
+/* Set to same colour as your a{color} */
+}
+a::-moz-selection {
+/* Set to same colour as your a{color} */
+}
 /*==================================================*/
 /*  $Lists - ol,ul,dl                               */
 /*==================================================*/
