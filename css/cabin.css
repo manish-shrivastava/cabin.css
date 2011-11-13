@@ -175,8 +175,8 @@ a:visited {
 /*== Pre & Code ==*/
 code,
 pre {
-	font-family: consolas, monospace, sans-serif;
-	font-size:1em;
+	font-family: Monaco, Andale Mono, Courier New, monospace;
+	font-size:0.875em;
 	background:#fff6c7;
 }
 code {
